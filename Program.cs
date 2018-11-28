@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace csExercises2
 {
@@ -38,28 +39,48 @@ namespace csExercises2
             //     System.Console.Write(u);
             // System.Console.WriteLine();
 
-            System.Console.WriteLine("Enter 5 numbers");
-            int[] five = new int[5];
-            for (int i = 0; i <= five.Length - 1; i++)
+            // System.Console.WriteLine("Enter 5 numbers");
+            // int[] five = new int[5];
+            // for (int i = 0; i <= five.Length - 1; i++)
+            // {
+            //     var num = Convert.ToInt32(Console.ReadLine());
+            //     foreach(var u in five)
+            //     {
+            //         if(num == u)
+            //         {
+            //             System.Console.WriteLine("dublicate number entered. Enter new one"); 
+            //             i--; 
+            //             break;   
+            //         }               
+            //     }
+            //     five[i] = num;
+            // }
+            // Array.Sort(five);
+            //     foreach(var item in five)
+            //     {
+            //         Console.Write(item.ToString());
+            //     }
+            //     System.Console.WriteLine();
+
+            System.Console.WriteLine("Enter numbers enter quit to stop");
+            bool thing = true;
+            var numbers = new List<int>();
+            while(thing == true)
             {
-                var num = Convert.ToInt32(Console.ReadLine());
-                foreach(var u in five)
+                var number = Console.ReadLine();
+                if(number == "quit")
                 {
-                    if(num == u)
-                    {
-                        System.Console.WriteLine("dublicate number entered. Enter new one"); 
-                        i--; 
-                        break;   
-                    }               
+                    thing = false;
+                } 
+                else
+                {
+                    numbers.Add(Convert.ToInt32(number));
                 }
-                five[i] = num;
             }
-            Array.Sort(five);
-                foreach(var item in five)
-                {
-                    Console.Write(item.ToString());
-                }
-                System.Console.WriteLine();
+            List<int>distinct = numbers.Distinct().ToList();
+            foreach ( var i in distinct)
+                System.Console.Write(i);
+        Console.WriteLine();
         }
     }
 }
