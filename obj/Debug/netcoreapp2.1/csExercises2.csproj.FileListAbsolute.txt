@@ -1,0 +1,11 @@
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/bin/Debug/netcoreapp2.1/csExercises2.deps.json
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/bin/Debug/netcoreapp2.1/csExercises2.runtimeconfig.json
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/bin/Debug/netcoreapp2.1/csExercises2.runtimeconfig.dev.json
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/bin/Debug/netcoreapp2.1/csExercises2.dll
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/bin/Debug/netcoreapp2.1/csExercises2.pdb
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/obj/Debug/netcoreapp2.1/csExercises2.csprojAssemblyReference.cache
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/obj/Debug/netcoreapp2.1/csExercises2.csproj.CoreCompileInputs.cache
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/obj/Debug/netcoreapp2.1/csExercises2.AssemblyInfoInputs.cache
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/obj/Debug/netcoreapp2.1/csExercises2.AssemblyInfo.cs
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/obj/Debug/netcoreapp2.1/csExercises2.dll
+/Users/dirkvancouver/Desktop/Projects/c#practice/csExercises2/obj/Debug/netcoreapp2.1/csExercises2.pdb
