@@ -62,25 +62,45 @@ namespace csExercises2
             //     }
             //     System.Console.WriteLine();
 
-            System.Console.WriteLine("Enter numbers enter quit to stop");
-            bool thing = true;
-            var numbers = new List<int>();
-            while(thing == true)
+        //     System.Console.WriteLine("Enter numbers enter quit to stop");
+        //     bool thing = true;
+        //     var numbers = new List<int>();
+        //     while(thing == true)
+        //     {
+        //         var number = Console.ReadLine();
+        //         if(number == "quit")
+        //         {
+        //             thing = false;
+        //         } 
+        //         else
+        //         {
+        //             numbers.Add(Convert.ToInt32(number));
+        //         }
+        //     }
+        //     List<int>distinct = numbers.Distinct().ToList();
+        //     foreach ( var i in distinct)
+        //         System.Console.Write(i);
+        // Console.WriteLine();
+
+        Console.Write("Enter comma separated numbers (more than 5)");
+        var palladin = true;
+        var userinput = "";
+        var nums = userinput.Split(',');
+        while(palladin == true)
+        {
+        userinput = Console.ReadLine();
+        nums = userinput.Split(',');
+            if(nums.Length < 5)
             {
-                var number = Console.ReadLine();
-                if(number == "quit")
-                {
-                    thing = false;
-                } 
-                else
-                {
-                    numbers.Add(Convert.ToInt32(number));
-                }
-            }
-            List<int>distinct = numbers.Distinct().ToList();
-            foreach ( var i in distinct)
-                System.Console.Write(i);
-        Console.WriteLine();
+                System.Console.WriteLine("less than 5");
+            } else 
+                palladin = false;
+        }
+        Array.Sort(nums);
+        for(var i = 0; i < 3; i++)
+        {
+            System.Console.WriteLine(nums[i]);
+        }
         }
     }
 }
