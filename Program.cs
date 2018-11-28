@@ -7,27 +7,36 @@ namespace csExercises2
     {
         static void Main(string[] args)
         {
-            var friends = new List<string>();
+            // var friends = new List<string>();
 
-            bool ending = true;
-            System.Console.WriteLine("Add your friends");
-            while ( ending == true)
-            {
-                var input = Console.ReadLine();
-                if (string.IsNullOrEmpty(input) == true)
-                {
-                    ending = false;
-                    break;
-                }
-                else 
-                {
-                    friends.Add(input);
-                    continue;
-                }
+            // bool ending = true;
+            // System.Console.WriteLine("Add your friends");
+            // while ( ending == true)
+            // {
+            //     var input = Console.ReadLine();
+            //     if (string.IsNullOrEmpty(input) == true)
+            //     {
+            //         ending = false;
+            //         break;
+            //     }
+            //     else 
+            //     {
+            //         friends.Add(input);
+            //         continue;
+            //     }
 
-            }
-            System.Console.WriteLine("Your friends are");
-            System.Console.WriteLine(friends[0]+ ", " + friends[1] + " and " + (friends.Count -2) + " other friends");
+            // }
+            // System.Console.WriteLine("Your friends are");
+            // System.Console.WriteLine(friends[0]+ ", " + friends[1] + " and " + (friends.Count -2) + " other friends");
+
+            string name = Console.ReadLine();
+            char[] nameReverse = name.ToCharArray();
+            Array.Reverse(nameReverse);
+            System.Console.WriteLine();
+            foreach (var u in nameReverse)
+                System.Console.Write(u);
+            System.Console.WriteLine();
+
         }
     }
 }
